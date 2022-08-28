@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>starbucks website landing page</title>
+    <link rel="stylesheet" href="style.css" />
+
+   
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="img/Design sem nome.png"alt="" class="logo"></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">conquistas</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbox">
+          <h2>PCE<br>
+            <span>E-SPORTS</span></h2>
+        <p>
+          PCE E-SPORTS, UMA GUILDA VOLTADA PARA O COMPETITIVO DE FREE FIRE, FOCANDO SEMPRE NA EVOLUÇÃO DOS SEUS MEMBROS! MESMO COM O FREE FIRE EM BAIXA, NÃO DESISTIMOS DESSE JOGO, VAMOS EM BUSCA SEMPRE DA EVOLUÇÃO, SÓ VENCE QUEM VAI A LUTA! 🔥🏆</p>
+        
+        <a href="#">Ler Mais Sobre</a>
+      </div>
+      <div class="imgbox">
+        <img src="img/img.pce.1.png"alt="" class="starbucks">
+      </div>
+      <ul class="thumb">
+        <li><img src="img/img.pce.1.png"alt="" onclick="imgslider('img/img.pce.1.png');changecirclecolor('#000000')"></li>
+        <li><img src="img/img.pce.2.png"alt="" onclick="imgslider('img/img.pce.2.png');changecirclecolor('#08a8ff')"></li>
+        <li><img src="img/Design sem nome (1).png"alt="" onclick="imgslider('img/Design sem nome (1).png');changecirclecolor('#1b6938')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+        <li><a href="#"><img src="img/twitter.png"alt=""></a></li>
+        <li><a href="#"><img src="img/instagram.png"alt=""></a></li>
+      </ul>
+    </section>
+
+    
+      <script type="text/javascript">
+function imgslider(anything){
+document.querySelector('.starbucks').src = anything;
+}
+function changecirclecolor(color){
+  const circle = document.querySelector('.circle')
+  circle.style.background = color;
+}
+    </script> >
+  </body>
+</html>
